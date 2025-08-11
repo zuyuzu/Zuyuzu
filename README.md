@@ -14,86 +14,109 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-<!DOCTYPE html><html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Galeria de Design</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      margin: 0;
-      padding: 2rem;
-      background-color: #f7f7f7;
-    }
-    h1 {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    .filters {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    .filters button {
-      margin: 0 0.5rem;
-      padding: 0.5rem 1rem;
-      cursor: pointer;
-      border: none;
-      border-radius: 5px;
-      background-color: #ddd;
-    }
-    .filters button.active {
-      background-color: #333;
-      color: white;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 1rem;
-    }
-    .item {
-      background-color: white;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
-    }
-    .item:hover {
-      transform: scale(1.02);
-    }
-    .item img {
-      width: 100%;
-      display: block;
-    }
-    .lightbox {
-      display: none;
-      position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0,0,0,0.8);
-      justify-content: center;
-      align-items: center;
-    }
-    .lightbox img {
-      max-width: 90%;
-      max-height: 90%;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zuyuzu Art Design</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: #fff7f9;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #ffb6c1, #ff69b4);
+            padding: 40px 20px;
+            text-align: center;
+            color: white;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2em;
+            margin: 5px 0 0;
+        }
+        nav {
+            background: #ffebf0;
+            text-align: center;
+            padding: 15px;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #ff69b4;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        footer {
+            background: #ffebf0;
+            text-align: center;
+            padding: 20px;
+            color: #555;
+            margin-top: 40px;
+        }
+        footer a {
+            color: #ff69b4;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-  <h1>Galeria de Design</h1>
-  <div class="filters">
-    <button class="active" onclick="filterItems('all')">Todos</button>
-    <button onclick="filterItems('poster')">Pôsteres</button>
-    <button onclick="filterItems('cartaz')">Cartazes</button>
-    <button onclick="filterItems('convite')">Convites</button>
-    <button onclick="filterItems('marca')">Marcas</button>
-    <button onclick="filterItems('modelo')">Modelos</button>
-  </div>
-  <div class="gallery">
-    <div class="item poster"><img src="https://via.placeholder.com/400x500?text=Poster+1" alt="Poster"></div>
-    <div class="item cartaz"><img src="https://via.placeholder.com/400x500?text=Cartaz+1" alt="Cartaz"></div>
-    <div class="item convite"><img src="https://via.placeholder.com/400x500?text=Convite+1" alt="Convite"></div>
-    <div class="item marca"><img src="https://via.placeholder.com/400x500?text=Marca+1" alt="Marca"></div>
-    <div class="item modelo"><img src="https://via.placeholder.com/400x500?text=Modelo+1" alt="Modelo"></div>
-    <div class="item poster"><img src="https://via.placeholder.com/400x500?text=Poster+2" alt="Poster"></div>
-    <div class="item cartaz"><img src="https://via.placeholder.com/400x500?
+
+    <header>
+        <h1>Zuyuzu Art Design</h1>
+        <p>Amor, Carinho, Imaginação e Criatividade em cada projeto</p>
+    </header>
+
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Sou Zuyuzu, apaixonada por criar marcas, cartazes, pôsteres, convites e modelos que carregam emoção e personalidade. Cada traço é pensado com amor, carinho e imaginação para transmitir a essência de cada cliente.</p>
+    </section>
+
+    <section id="projetos">
+        <h2>Projetos</h2>
+        <div class="gallery">
+            <!-- Substitua as imagens abaixo pelas suas -->
+            <img src="imagem1.jpg" alt="Projeto 1">
+            <img src="imagem2.jpg" alt="Projeto 2">
+            <img src="imagem3.jpg" alt="Projeto 3">
+            <img src="imagem4.jpg" alt="Projeto 4">
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Email: <a href="mailto:zuyuzuartdesign@gmail.com">zuyuzuartdesign@gmail.com</a></p>
+    </section>
+
+    <footer>
+        <p>© 2025 Zuyuzu Art Design | Criado com 💖 e imaginação</p>
+    </footer>
+
+</body>
+</html>
